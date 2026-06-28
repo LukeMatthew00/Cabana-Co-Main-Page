@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabana & Co. | Boutique Creative & Acquisition Agency</title>
+  <meta name="description" content="Cabana & Co. is an elite marketing and creative production agency managing high-intent growth engines and brand architectures globally from our Dubai headquarters.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lenis CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+
+  <!-- Preloader Section -->
+  <div id="preloader" class="preloader">
+    <div class="preloader_content">
+      <div class="preloader_title">Cabana & Co.</div>
+      <div class="preloader_subtitle">Boutique Creative & Acquisition Agency</div>
+      <div class="preloader_bar_container">
+        <div class="preloader_bar" id="preloaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- Main Wrapper for Barba/Scroll Transitions -->
+  <div class="main-wrapper">
+
+    <!-- Header / Navbar -->
+    <header class="header" id="mainHeader">
+      <div class="header_container">
+        <!-- Logo -->
+        <a href="#hero" class="logo_link" id="logoLink">
+          <svg class="logo_svg" width="160" height="32" viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="24" font-family="'Outfit', sans-serif" font-weight="700" font-size="22" letter-spacing="1.5" fill="currentColor">CABANA & CO.</text>
+          </svg>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="nav_menu" id="desktopNav">
+          <ul class="nav_list">
+            <li><a href="#about" class="nav_item">About</a></li>
+            <li><a href="#engine" class="nav_item">The Engine</a></li>
+            <li><a href="#expertise" class="nav_item">Expertise</a></li>
+            <li><a href="#global" class="nav_item">Global Hubs</a></li>
+          </ul>
+        </nav>
+
+        <!-- CTA and Contacts -->
+        <div class="header_cta">
+          <a href="mailto:info@cabanaco.agency" class="nav_contact f-desktop">info@cabanaco.agency</a>
+          <button class="btn_cta" id="briefBtn">
+            <span class="btn_cta_text">Initiate Brief</span>
+            <span class="btn_cta_text is-hover">Initiate Brief</span>
+          </button>
+          
+          <!-- Mobile Menu Trigger -->
+          <button class="mobile_menu_trigger" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+            <span class="menu_line"></span>
+            <span class="menu_line"></span>
+            <span class="menu_line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile_nav_panel" id="mobileNavPanel">
+      <div class="mobile_nav_content">
+        <ul class="mobile_nav_list">
+          <li><a href="#about" class="mobile_nav_item">About</a></li>
+          <li><a href="#engine" class="mobile_nav_item">The Engine</a></li>
+          <li><a href="#expertise" class="mobile_nav_item">Expertise</a></li>
+          <li><a href="#global" class="mobile_nav_item">Global Hubs</a></li>
+        </ul>
+        <div class="mobile_nav_contacts">
+          <a href="mailto:info@cabanaco.agency" class="mobile_contact">info@cabanaco.agency</a>
+          <a href="tel:+971544325050" class="mobile_contact">+971 54 432 5050</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero / Penthouse Window Section -->
+    <section id="hero" class="hero_section">
+      <!-- Zoom Transition Layers -->
+      <div class="hero_zoom_container">
+        <!-- Image 2: Zoomed Skyline Background (Balcony View) -->
+        <div class="hero_zoom_layer hero_zoom_skyline" id="heroZoomSkyline"></div>
+        
+        <!-- Image 1: Penthouse Interior (Office View) -->
+        <div class="hero_zoom_layer hero_zoom_interior" id="heroZoomInterior"></div>
+        
+        <!-- Dark Vignette Overlay -->
+        <div class="hero_overlay_grad"></div>
+      </div>
+
+      <!-- Hero Copy -->
+      <div class="hero_content_wrapper">
+        <div class="container hero_container_grid">
+          <div class="hero_col_left">
+            <h1 class="h2 text-light text-reveal" id="heroTitleLeft">We are movement</h1>
+          </div>
+          <div class="hero_col_right">
+            <h2 class="h2 a-right text-light text-reveal" id="heroTitleRight">We are distinction</h2>
+          </div>
+          
+          <div class="hero_bot_row">
+            <div class="hero_bot_desc">
+              <h3 class="p5 text-light text-reveal-slow">Your growth partner <br>to scale with distinction.</h3>
+              <div class="divider_line on-color"></div>
+              <p class="p7 text-light text-reveal-slow">Every marketing campaign is engineered around absolute precision, high creative caliber, and surgical performance analytics—so you dominate your market while we manage the complexity.</p>
+            </div>
+            
+            <div class="hero_bot_scroll">
+              <div class="scroll_line"></div>
+              <div class="scroll_prompt">
+                <a href="#about" class="scroll_link">
+                  <span class="l1 text-light">Scroll down</span>
+                  <span class="l1 text-light is-hover">To launch</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about_section section_padding">
+      <div class="container">
+        <div class="about_lead">
+          <h2 class="p2 text-light" id="aboutHeading">Cabana & Co.<sup>®</sup> is an elite creative and acquisition engine. We partner with international brands and fast-growing enterprise scale ups to drive over $500M+ in revenue across 150+ global campaigns.</h2>
+        </div>
+
+        <div class="about_grid_container">
+          <!-- Card 1 -->
+          <div class="about_card">
+            <div class="about_card_inner">
+              <h3 class="p5 text-light">Creative Precision</h3>
+              <div class="divider_line on-color"></div>
+              <p class="p7 text-gray">We build bespoke visual identities, premium typography, and cinema-grade advertising assets that align with high-end customer demographics.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="about_card">
+            <div class="about_card_inner">
+              <h3 class="p5 text-light">Engineered Scale</h3>
+              <div class="divider_line on-color"></div>
+              <p class="p7 text-gray">Omni-channel paid media strategies utilizing sophisticated machine learning funnels to minimize CAC and maximize customer LTV.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="about_card">
+            <div class="about_card_inner">
+              <h3 class="p5 text-light">Absolute Discretion</h3>
+              <div class="divider_line on-color"></div>
+              <p class="p7 text-gray">Operating under strict NDA protocols for private offices, family funds, and luxury conglomerates requiring boutique execution without public noise.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="about_card">
+            <div class="about_card_inner">
+              <h3 class="p5 text-light">Global Network</h3>
+              <div class="divider_line on-color"></div>
+              <p class="p7 text-gray">From creative directors in Paris to machine-learning performance specialists in New York, we deploy global talent with local expertise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Growth Engine / Blueprint Section -->
+    <section id="engine" class="engine_section section_padding bg-dark clip">
+      <div class="container">
+        <div class="engine_header">
+          <h2 class="h3 text-light text-reveal">The Acquisition Engine</h2>
+          <p class="p5 text-gold">Engineered Growth Funnel Architecture</p>
+        </div>
+
+        <div class="blueprint_wrapper">
+          <!-- Blueprint Tabs Switcher -->
+          <div class="blueprint_tabs">
+            <button class="tab_btn active" data-scale="scale-a">
+              <span class="l1">Scale A: Enterprise Domination</span>
+            </button>
+            <button class="tab_btn" data-scale="scale-b">
+              <span class="l1">Scale B: Market Disruption</span>
+            </button>
+          </div>
+
+          <div class="blueprint_grid">
+            <!-- Left Info Column -->
+            <div class="blueprint_info">
+              <div class="info_header">
+                <span class="p5 text-light" id="blueprintScaleName">Scale A</span>
+                <h4 class="h2 text-light" id="blueprintScaleTitle">Enterprise Domination</h4>
+              </div>
+
+              <!-- Metrics List -->
+              <div class="metrics_container" id="blueprintMetrics">
+                <!-- Javascript will render metrics dynamically -->
+              </div>
+            </div>
+
+            <!-- Center Blueprint Graphic -->
+            <div class="blueprint_graphic">
+              <!-- SVG Schematic of Funnel -->
+              <svg id="funnelSvg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Funnel bounds -->
+                <path class="blueprint-line active-line" d="M20 30H380L250 250H150L20 30Z" stroke="rgba(212, 175, 55, 0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                
+                <!-- Stages -->
+                <!-- Top (Awareness) -->
+                <line class="blueprint-line" x1="40" y1="70" x2="360" y2="70" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1"/>
+                <text x="200" y="55" fill="rgba(255, 255, 255, 0.6)" font-size="10" text-anchor="middle" font-family="'Outfit'">AW/IMPRESSIONS</text>
+                
+                <!-- Middle (Intent) -->
+                <line class="blueprint-line" x1="80" y1="130" x2="320" y2="130" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1"/>
+                <text x="200" y="115" fill="rgba(255, 255, 255, 0.6)" font-size="10" text-anchor="middle" font-family="'Outfit'">CREATIVE ENGAGEMENT</text>
+                
+                <!-- Lower (Conversion) -->
+                <line class="blueprint-line" x1="120" y1="190" x2="280" y2="190" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1"/>
+                <text x="200" y="175" fill="rgba(255, 255, 255, 0.6)" font-size="10" text-anchor="middle" font-family="'Outfit'">CONVERSION HOOK</text>
+                
+                <!-- Bottom (Retention) -->
+                <text x="200" y="230" fill="var(--color-gold)" font-weight="500" font-size="11" text-anchor="middle" font-family="'Outfit'">LTV SCALING ENGINE</text>
+
+                <!-- Glowing node markers -->
+                <circle class="blueprint-node pulse" cx="200" cy="70" r="4" fill="var(--color-gold)"/>
+                <circle class="blueprint-node pulse" cx="150" cy="130" r="4" fill="var(--color-gold)"/>
+                <circle class="blueprint-node pulse" cx="250" cy="190" r="4" fill="var(--color-gold)"/>
+                <circle class="blueprint-node pulse" cx="200" cy="250" r="4" fill="var(--color-gold)"/>
+              </svg>
+            </div>
+
+            <!-- Right Detail Column -->
+            <div class="blueprint_detail">
+              <div class="detail_card">
+                <span class="l1 text-gold">Funnel Operations</span>
+                <div class="divider_line on-color"></div>
+                <h5 class="p5 text-light">Omni-Channel Coverage</h5>
+                <p class="p7 text-gray" id="blueprintDesc">Structured machine learning campaigns executed concurrently on Meta, Google Search, YouTube, TikTok, and programmatic networks to lock in premium conversion loops.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Expertise / Accordion Section -->
+    <section id="expertise" class="expertise_section section_padding bg-light">
+      <div class="container accordion_layout">
+        <!-- Sticky Left Header -->
+        <div class="accordion_header_column">
+          <div class="line_h"></div>
+          <span class="l1 text-gray">Expertise In Motion</span>
+          <h2 class="h2 text-dark">Services</h2>
+          <p class="p5 text-gray-dark">Bespoke capabilities engineered for extreme growth and elegant positioning.</p>
+        </div>
+
+        <!-- Accordion Right Column -->
+        <div class="accordion_content_column">
+          <!-- Item 1 -->
+          <div class="accordion_item" data-bg="brand">
+            <div class="accordion_trigger">
+              <h3 class="h3 text-dark">Brand Architecture</h3>
+              <div class="accordion_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="icon_plus" d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion_panel">
+              <p class="p7 text-gray-dark">We design luxury brand architectures from the ground up: high-end corporate identity, positioning strategies, signature messaging, and custom brand books. We ensure your brand communicates prestige and commands premium pricing in saturated marketplaces.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion_item" data-bg="acquisition">
+            <div class="accordion_trigger">
+              <h3 class="h3 text-dark">Acquisition Engines</h3>
+              <div class="accordion_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="icon_plus" d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion_panel">
+              <p class="p7 text-gray-dark">Surgical scale through premium customer acquisition. We construct custom media buying frameworks across top networks, building private database audiences, implementing advanced retargeting nodes, and designing converting landing pages.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion_item" data-bg="creative">
+            <div class="accordion_trigger">
+              <h3 class="h3 text-dark">Creative Production</h3>
+              <div class="accordion_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="icon_plus" d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion_panel">
+              <p class="p7 text-gray-dark">High-production-value video assets, editorial photography, and interactive digital interfaces designed to evoke raw desire. Our internal production crew coordinates campaigns globally, outputting premium assets optimized specifically for high CTR.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion_item" data-bg="data">
+            <div class="accordion_trigger">
+              <h3 class="h3 text-dark">Data Intelligence</h3>
+              <div class="accordion_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="icon_plus" d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion_panel">
+              <p class="p7 text-gray-dark">Absolute clarity over your conversion metrics. We establish custom server-side tracking (CAPI), detailed attribution setups, lifetime value analysis, and real-time business dashboards to coordinate scaling runs with high precision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sliding Accordion Backgrounds for Desktop Hover -->
+      <div class="accordion_media_container f-desktop">
+        <div class="accordion_bg_image active" id="bg-default" style="background-image: radial-gradient(circle, rgba(20,16,16,0.85) 0%, rgba(10,9,8,1) 100%);"></div>
+        <div class="accordion_bg_image" id="bg-brand" style="background-image: url('./assets/images/brand_architecture.png');"></div>
+        <div class="accordion_bg_image" id="bg-acquisition" style="background-image: url('./assets/images/acquisition_engine.png');"></div>
+        <div class="accordion_bg_image" id="bg-creative" style="background-image: url('./assets/images/creative_production.png');"></div>
+        <div class="accordion_bg_image" id="bg-data" style="background-image: url('./assets/images/data_intelligence.png');"></div>
+      </div>
+    </section>
+
+    <!-- Global Hubs Section (3D Globe & Stats) -->
+    <section id="global" class="global_section section_padding bg-dark clip">
+      <div class="container">
+        <!-- Floating Headline overlaying the globe -->
+        <div class="global_headline_wrapper">
+          <div class="global_headline_left">
+            <h2 class="p5 text-light a-right">Scale globally</h2>
+          </div>
+          <div class="global_icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 19.93C7.05 19.44 4 16.08 4 12C4 11.38 4.08 10.78 4.21 10.21L9 15V16C9 17.1 9.9 18 11 18V19.93ZM17.9 17.39C17.64 16.58 16.9 16 16 16H15V13C15 12.45 14.55 12 14 12H8V10H10C10.55 10 11 9.55 11 9V7H13C14.1 7 15 6.1 15 5V4.59C17.93 5.88 20 8.7 20 12C20 14.08 19.2 15.97 17.9 17.39Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="global_headline_right">
+            <!-- Scroll-triggered country selector wheel -->
+            <div class="countries_wheel_wrapper" id="countriesWheelWrapper">
+              <div class="countries_wheel_list" id="countriesWheelList">
+                <!-- Javascript will load A-Z countries dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="global_grid">
+          <!-- Left side: 3D Globe Container -->
+          <div class="globe_visual_wrapper">
+            <div id="globe3D" class="globe_3d"></div>
+            <!-- Mobile Fallback static representation -->
+            <div class="mobile_globe_fallback b-mobile"></div>
+          </div>
+
+          <!-- Right side: Stats / Office coordinates -->
+          <div class="global_stats_column">
+            <!-- Stat Card 1 -->
+            <div class="stat_card">
+              <div class="stat_bg"></div>
+              <div class="stat_content">
+                <h3 class="h2 text-gold">500M+</h3>
+                <p class="l1 text-gray">Ad Impressions Managed</p>
+                <p class="p7 text-gray-light">Optimized creative scaling patterns delivering surgical conversion rates across highly-targeted luxury buyer segments.</p>
+              </div>
+            </div>
+
+            <!-- Stat Card 2 -->
+            <div class="stat_card">
+              <div class="stat_bg"></div>
+              <div class="stat_content">
+                <h3 class="h2 text-light" style="font-size: clamp(1.4rem, 3.5vw, 2.2rem);">Baliuag, PH</h3>
+                <p class="l1 text-gray">Global Operations HQ</p>
+                <div class="dubai_clock">
+                  <span class="l1 text-gray">Local Time</span>
+                  <span class="h3 clock_digits" id="baliuagClock">07:59</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer_section section_padding bg-dark">
+      <div class="container footer_grid">
+        <div class="footer_left">
+          <h3 class="p5 text-light text-reveal">Scale your brand with absolute authority and creative caliber.</h3>
+          <div class="unit-60"></div>
+          
+          <div class="footer_contacts_wrapper">
+            <div class="footer_contact_item">
+              <span class="l1 text-gold">General Inquiries</span>
+              <a href="mailto:info@cabanaco.agency" class="p5 text-light text-hover">info@cabanaco.agency</a>
+            </div>
+            <div class="footer_contact_item">
+              <span class="l1 text-gold">Briefing Desk</span>
+              <a href="tel:+971544325050" class="p5 text-light text-hover">+971 54 432 5050</a>
+            </div>
+          </div>
+
+          <div class="divider_line base-500"></div>
+
+          <div class="footer_legal_row">
+            <span class="l1 text-base-500">© 2026 Cabana & Co. All rights reserved.</span>
+            <a href="#" class="l1 text-base-500 text-hover">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="footer_right">
+          <div class="credits_wrapper">
+            <span class="l1 text-base-500">Engineered by</span>
+            <a href="#" class="l1 text-light text-hover uppercase">Antigravity Studio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Briefing Popup Modal -->
+    <div class="modal_overlay" id="briefModal">
+      <div class="modal_container" id="modalContainer">
+        <!-- Close Button -->
+        <button class="modal_close_btn" id="closeModalBtn" aria-label="Close modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <!-- Form Interface -->
+        <div class="modal_form_view" id="modalFormView">
+          <div class="modal_header">
+            <h4 class="h4 text-light">Initiate Marketing Brief</h4>
+            <p class="l1 text-gold">Secure Onboarding Desk</p>
+          </div>
+
+          <form class="brief_form" id="briefForm" novalidate>
+            <!-- Input Row 1 -->
+            <div class="input_group">
+              <label for="clientName" class="l1">Contact Name</label>
+              <input type="text" id="clientName" name="name" class="input_field" placeholder="Your Name" required>
+              <span class="error_msg" id="nameError"></span>
+            </div>
+
+            <!-- Input Row 2 -->
+            <div class="input_group">
+              <label for="clientEmail" class="l1">Email Address</label>
+              <input type="email" id="clientEmail" name="email" class="input_field" placeholder="name@company.com" required>
+              <span class="error_msg" id="emailError"></span>
+            </div>
+
+            <!-- Input Row 3 -->
+            <div class="input_group">
+              <label for="clientCompany" class="l1">Company Name</label>
+              <input type="text" id="clientCompany" name="company" class="input_field" placeholder="e.g. Luxury Co." required>
+              <span class="error_msg" id="companyError"></span>
+            </div>
+
+            <!-- Input Row 4 -->
+            <div class="input_group">
+              <label for="targetScale" class="l1">Target Scale Scope</label>
+              <select id="targetScale" name="scale" class="input_field select_field">
+                <option value="scale-a">Scale A: Enterprise Domination</option>
+                <option value="scale-b">Scale B: Market Disruption</option>
+              </select>
+            </div>
+
+            <!-- Consent -->
+            <div class="consent_group">
+              <label class="checkbox_label">
+                <input type="checkbox" id="consentCheck" name="consent" required>
+                <span class="custom_checkbox"></span>
+                <span class="l1 text-gray">I agree to Cabana & Co.'s strict non-disclosure agreement protocol and Privacy Policy.</span>
+              </label>
+              <span class="error_msg" id="consentError"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn_submit" id="submitBriefBtn">
+              <span class="l1 uppercase">Lock In Brief & Generate Ticket</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Success Boarding Pass View -->
+        <div class="modal_success_view" id="modalSuccessView" style="display: none;">
+          <div class="ticket_card" id="boardingPassTicket">
+            <!-- Ticket Header -->
+            <div class="ticket_header">
+              <div class="ticket_logo">CABANA & CO.</div>
+              <div class="ticket_tag">ACQUISITION BOARDING PASS</div>
+            </div>
+
+            <!-- Ticket Body -->
+            <div class="ticket_body">
+              <div class="ticket_row">
+                <div class="ticket_col">
+                  <span class="ticket_label">PASSENGER NAME</span>
+                  <span class="ticket_value" id="ticketPassengerName">Alexander Mercer</span>
+                </div>
+                <div class="ticket_col">
+                  <span class="ticket_label">ORGANIZATION</span>
+                  <span class="ticket_value" id="ticketOrganization">Mercer Luxury Group</span>
+                </div>
+              </div>
+
+              <div class="ticket_row">
+                <div class="ticket_col">
+                  <span class="ticket_label">ORIGIN</span>
+                  <span class="ticket_value">BRIEFING INGEST</span>
+                </div>
+                <div class="ticket_col">
+                  <span class="ticket_label">DESTINATION HUB</span>
+                  <span class="ticket_value" id="ticketDestination">DUBAI DXB HQ</span>
+                </div>
+              </div>
+
+              <div class="ticket_row">
+                <div class="ticket_col">
+                  <span class="ticket_label">CAMPAIGN CLASS</span>
+                  <span class="ticket_value" id="ticketClass">ENTERPRISE CLASS</span>
+                </div>
+                <div class="ticket_col">
+                  <span class="ticket_label">STATUS CODE</span>
+                  <span class="ticket_value text-gold">LOCKED & READY</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ticket Footer / Barcode -->
+            <div class="ticket_footer">
+              <div class="barcode_graphics">
+                <!-- SVG simulated Barcode -->
+                <svg width="100%" height="32" viewBox="0 0 200 32" fill="currentColor">
+                  <rect x="0" y="0" width="4" height="32"/>
+                  <rect x="6" y="0" width="2" height="32"/>
+                  <rect x="10" y="0" width="8" height="32"/>
+                  <rect x="20" y="0" width="2" height="32"/>
+                  <rect x="24" y="0" width="4" height="32"/>
+                  <rect x="30" y="0" width="6" height="32"/>
+                  <rect x="38" y="0" width="2" height="32"/>
+                  <rect x="42" y="0" width="8" height="32"/>
+                  <rect x="52" y="0" width="4" height="32"/>
+                  <rect x="58" y="0" width="2" height="32"/>
+                  <rect x="62" y="0" width="6" height="32"/>
+                  <rect x="70" y="0" width="2" height="32"/>
+                  <rect x="74" y="0" width="4" height="32"/>
+                  <rect x="80" y="0" width="8" height="32"/>
+                  <rect x="90" y="0" width="2" height="32"/>
+                  <rect x="94" y="0" width="4" height="32"/>
+                  <rect x="100" y="0" width="6" height="32"/>
+                  <rect x="108" y="0" width="2" height="32"/>
+                  <rect x="112" y="0" width="8" height="32"/>
+                  <rect x="122" y="0" width="4" height="32"/>
+                  <rect x="128" y="0" width="2" height="32"/>
+                  <rect x="132" y="0" width="6" height="32"/>
+                  <rect x="140" y="0" width="2" height="32"/>
+                  <rect x="144" y="0" width="4" height="32"/>
+                  <rect x="150" y="0" width="8" height="32"/>
+                  <rect x="160" y="0" width="2" height="32"/>
+                  <rect x="164" y="0" width="4" height="32"/>
+                  <rect x="170" y="0" width="6" height="32"/>
+                  <rect x="178" y="0" width="2" height="32"/>
+                  <rect x="182" y="0" width="8" height="32"/>
+                  <rect x="192" y="0" width="4" height="32"/>
+                  <rect x="198" y="0" width="2" height="32"/>
+                </svg>
+              </div>
+              <div class="ticket_footer_msg">Our briefing desk will contact you within 2 hours. Close this modal to exit.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS Libraries CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.29.1/dist/globe.gl.min.js"></script>
+  
+  <!-- Main Script -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
